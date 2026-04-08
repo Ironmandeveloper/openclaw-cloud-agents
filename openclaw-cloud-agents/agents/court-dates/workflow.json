@@ -1,0 +1,11 @@
+{
+  "name": "court-dates-agent",
+  "steps": [
+    "validate_intake",
+    "extract_dates",
+    "calculate_reminders",
+    "compose_summary",
+    "write_audit_entry"
+  ],
+  "output": ["summary", "reminders", "priority"]
+}

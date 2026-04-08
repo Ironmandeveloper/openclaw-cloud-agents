@@ -1,0 +1,11 @@
+{
+  "name": "google-ads-agent",
+  "steps": [
+    "validate_campaign_input",
+    "analyze_metrics",
+    "draft_recommendations",
+    "propose_copy_variants",
+    "write_audit_entry"
+  ],
+  "output": ["summary", "recommendation", "suggestedCopy"]
+}

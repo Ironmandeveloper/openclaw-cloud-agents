@@ -1,0 +1,22 @@
+{
+  "name": "openclaw-cloud-agents",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "apps/api",
+    "apps/dashboard"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace api\" \"npm run dev --workspace dashboard\"",
+    "build": "npm run build --workspace api && npm run build --workspace dashboard",
+    "start": "concurrently \"npm run start --workspace api\" \"npm run start --workspace dashboard\"",
+    "lint": "npm run lint --workspace dashboard",
+    "typecheck": "npm run typecheck --workspace api && npm run typecheck --workspace dashboard"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
